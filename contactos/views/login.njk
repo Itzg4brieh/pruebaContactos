@@ -1,0 +1,25 @@
+{% extends "base.njk" %}
+
+{% block titulo %}Libros | Nuevo{% endblock %}
+
+{% block contenido %}
+
+    <h1>Login de Usuario</h1>
+
+    <form action="/contactos" method="post" enctype="multipart/form-data">
+        <div class="form-group mb-3">
+            <label for="titulo">Usuario:</label>
+            <input type="text" class="form-control" name="titulo" 
+                placeholder="Título del libro..." />
+        </div>
+        <div class="form-group mb-3">
+            <label for="editorial">Contraseña:</label>
+            <input type="text" class="form-control" name="editorial"
+                placeholder="Editorial del libro..." />
+        </div>
+        <div class="form-group mb-3">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+    </form>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.njk" %}
+
+{% block titulo %}Libros | Ficha{% endblock %}
+
+{% block contenido %}
+
+    <h1>Ficha de libro</h1>
+    <div>
+        <p><strong>Nombre: </strong> {{ contacto.nombre }}</p>
+        <p><strong>Edad: </strong> {{ contacto.edad }}</p>
+        <p><strong>Telefono: </strong> {{ contacto.telefono }}</p>
+        {# <p><img src="/public/portadas/{{ libro.portada }}" width="30%" /></p> #}
+    </div>
+
+{% endblock %}
